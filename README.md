@@ -1,2 +1,2 @@
 # Responsive-Navbar
-# A Responsive Navbar created using Tailwind CSS and Vanilla JS
+A Responsive Navbar created using Tailwind CSS and Vanilla JS
