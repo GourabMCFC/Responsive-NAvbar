@@ -6,24 +6,29 @@
     <title>Responsive Navbar</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="font-mono">
     <header>
-        <nav class="bg-slate-600 font-mono text-slate-300">
+        <nav class="bg-slate-600 md:flex md:flex-wrap md:items-center md:justify-around text-slate-300">
             <div class="flex items-center flex-wrap justify-between p-2">
-                <h1 class="text-3xl mx-2 font-bold uppercase"><a href="#">Lorem Ipsum</a></h1>
-                <h1 class="text-4xl font-serif cursor-pointer mx-3 hover:bg-slate-400 active:bg-slate-800" onclick="menuToggle()">&equiv;</h1>
+                <h1 class="text-3xl md:text-4xl mx-2 md:mx-0 font-bold uppercase"><a href="#">Lorem Ipsum</a></h1>
+                <h1 class="text-4xl font-serif cursor-pointer mx-3 hover:bg-slate-400 active:bg-slate-800 md:hidden" onclick="menuToggle()">&equiv;</h1>
             </div>
-            <div id="menu" class="hidden">
-                <ul class="flex flex-col items-center font-semibold uppercase text-xl p-2 gap-y-2">
+            <div id="menu" class="hidden md:block">
+                <ul class="flex flex-col md:flex-row items-center font-semibold uppercase text-xl md:text-2xl p-2 gap-y-2 md:gap-x-4">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Catalogue</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <hr>
+    <section>
+        <div class="h-screen p-2 capitalize bg-slate-400">
+            <p class="text-xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis magni aliquam vel voluptates aperiam enim, optio labore dignissimos ut quasi magnam eaque impedit fugiat iure nulla atque porro beatae consequatur.</p>
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
